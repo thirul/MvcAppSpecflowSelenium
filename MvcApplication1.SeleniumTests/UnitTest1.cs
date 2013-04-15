@@ -30,8 +30,8 @@ namespace MvcApplication1.SeleniumTests
             var emailElement = webDriver.FindElement(By.Id("Email"));
             var passwordElement = webDriver.FindElement(By.Id("Passwd"));
 
-            emailElement.SendKeys("invalid");
-            passwordElement.SendKeys("invalid");
+            emailElement.SendKeys("invalid");// enter valid gmail email id
+            passwordElement.SendKeys("invalid");// enter valid gmail password 
 
             var signInElement = webDriver.FindElement(By.Id("signIn"));
             signInElement.Click();
